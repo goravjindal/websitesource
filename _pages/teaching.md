@@ -11,16 +11,16 @@ description: Some courses I taught/tutored.
 <div class="teaching">
     <div class="thumbnail">
         <a href="{{ teaching.redirect }}" target="_blank">
+         <span>
+            <h1>{{ teaching.title }}</h1>
+            <br/>
+            <p>{{ teaching.description }}</p>
+        </span>
         {% if teaching.img %}
         <img class="thumbnail" src="{{ teaching.img | prepend: site.baseurl | prepend: site.url }}"/>
         {% else %}
         <div class="thumbnail blankbox"></div>
         {% endif %}    
-        <span>
-            <h1>{{ teaching.title }}</h1>
-            <br/>
-            <p>{{ teaching.description }}</p>
-        </span>
         </a>
     </div>
 </div>
@@ -29,16 +29,16 @@ description: Some courses I taught/tutored.
 <div class="teaching ">
     <div class="thumbnail">
         <a href="{{ teaching.url | prepend: site.baseurl | prepend: site.url }}">
-        {% if teaching.img %}
-        <img class="thumbnail" src="{{ teaching.img | prepend: site.baseurl | prepend: site.url }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
         <span>
             <h1>{{ teaching.title }}</h1>
             <br/>
             <p>{{ teaching.description }}</p>
         </span>
+        {% if teaching.img %}
+        <img class="thumbnail" src="{{ teaching.img | prepend: site.baseurl | prepend: site.url }}"/>
+        {% else %}
+        <div class="thumbnail blankbox"></div>
+        {% endif %}    
         </a>
     </div>
 </div>
