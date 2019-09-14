@@ -1,13 +1,14 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
+name: Gorav Jindal
 title: Gorav Jindal
 email: gorav.jindal@gmail.com
 description: > # this means to ignore newlines until "url:"
   Gorav Jindal's personal and academic webpage.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Hosted by <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
